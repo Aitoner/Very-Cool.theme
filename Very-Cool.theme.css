@@ -1,0 +1,153 @@
+/**
+ * @name Very-Cool
+ * @author MrGoodWill
+ * @version 1.0.0
+ * @description A modern, sleek dark theme for Discord with animated background
+ */
+
+/* Main Background Colors */
+
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Spotify-Discord/css/source.css);
+
+:root {
+    --background-primary: #1a1a1a;
+    --background-secondary: #2d2d2d;
+    --background-secondary-alt: #333333;
+    --background-tertiary: #252525;
+    --background-accent: #404040;
+    
+    /* Text Colors */
+    --text-normal: #dcddde;
+    --text-muted: #999999;
+    --text-link: #71a4ee;
+    
+    /* Interactive Colors */
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #ffffff;
+    
+    /* Accent Colors */
+    --accent-color: #7289da;
+    --accent-color-hover: #869aef;
+}
+
+/* Animated Background */
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Loading.io inspired animation */
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 50px;
+    }
+}
+
+/* Apply animated background to main app */
+.app-2CXKsg {
+    background: linear-gradient(
+        -45deg, 
+        var(--background-primary) 25%, 
+        var(--background-secondary) 25%, 
+        var(--background-secondary) 50%, 
+        var(--background-primary) 50%, 
+        var(--background-primary) 75%, 
+        var(--background-secondary) 75%, 
+        var(--background-secondary)
+    );
+    background-size: 50px 50px;
+    animation: moveBackground 2s linear infinite;
+}
+
+/* Add transparency to containers to show background */
+.container-1NXEtd,
+.chat-2ZfjoI,
+.members-3WRCEx {
+    background-color: rgba(45, 45, 45, 0.7) !important;
+}
+
+/* Server List Styling */
+.guilds-2JjMmN {
+    background-color: rgba(37, 37, 37, 0.9) !important;
+    width: 70px;
+}
+
+/* Channel List Styling */
+.container-1NXEtd {
+    background-color: rgba(45, 45, 45, 0.7) !important;
+}
+
+/* Chat Area Styling */
+.chat-2ZfjoI {
+    background-color: rgba(45, 45, 45, 0.7) !important;
+}
+
+/* Message Box Styling */
+.channelTextArea-1FufC0 {
+    background-color: var(--background-secondary);
+    margin: 0 16px 24px;
+    border-radius: 8px;
+}
+
+/* Server Name and Channel Header */
+.headerBar-1YYOfi {
+    background-color: rgba(45, 45, 45, 0.9);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+/* Member List Styling */
+.members-3WRCEx {
+    background-color: rgba(45, 45, 45, 0.7) !important;
+}
+
+/* User Area Styling */
+.panels-3wFtMD {
+    background-color: var(--background-secondary-alt);
+}
+
+/* Buttons and Interactive Elements */
+.button-12Fmur {
+    border-radius: 3px;
+    transition: background-color 0.2s ease;
+}
+
+.button-12Fmur:hover {
+    background-color: var(--background-accent);
+}
+
+/* Messages Styling */
+.message-2CShn3 {
+    background-color: rgba(26, 26, 26, 0.6);
+    margin: 0 8px;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.message-2CShn3:hover {
+    background-color: rgba(45, 45, 45, 0.8);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--background-accent);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
